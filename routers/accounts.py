@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
 from models.account import Account
-from models.database import get_db
+from database import get_db
 from models.transaction import Transaction
 from schemas.account import AccountCreateRequest, AccountResponse, TransactionResponse
 
